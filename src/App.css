@@ -1,38 +1,57 @@
-.App {
+.App{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  max-width: 700px;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.movie-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  /* border:2px solid blue; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 9px 20px  rgba(0, 0, 0, 0.19);
+  background-color: rgb(182, 248, 204);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.movie-details {
+  text-align: left;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
+.movie-details h2 {
+ text-transform: uppercase;
+ color:rgb(15, 103, 50);
+ font-weight: 700;
+ font-size: 30px;
+}
+.movie-details h3 {
+  text-transform: uppercase;
+  color:rgb(15, 103, 50);
+  font-weight: 700;
+  font-size: 30px;
+ }
+ span{
+  font-size: 17px;
+  font-weight: 500;
+ }
+ .up{
+  display: flex;
+ }
+ .up h4{
+ margin-left: 20px;
+ margin-top: 15px;
+ }
+ 
